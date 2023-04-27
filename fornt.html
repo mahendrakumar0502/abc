@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vector page</title>
+    <style>
+        *{
+            margin: 0px;
+            outline: 0px;
+            padding: 0px;
+        }
+        .nav{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 18vh;
+            width: 100%;
+            background-color: rgb(253, 93, 0);
+        }
+        .left img{
+      
+            width: 200px;
+            height: 80px;
+            padding-left: 60px;     
+        }
+       
+        .right{
+                display: flex;
+        }
+
+        .right .search-bar {
+            position: relative;
+        }
+
+        .right .search-bar input{
+            width: 120px;
+        }
+
+        .right .search-bar i{
+            position: absolute;
+            left: 90PX;
+            top: 10px;
+        }
+
+        .right div{
+            padding-right: 40px;
+            font-size: 20px;
+        }
+       
+        .right div a:hover{
+            color: rgb(255, 255, 255);
+        }
+         .right div a:link{
+            text-decoration: none;
+        }
+      
+        .con{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    .con img{
+        width: 100%;
+        height: 80vh;
+        background-size: 100% 100%;
+    }
+    .arrow{
+        position: absolute;
+        font-size: 40px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        top:35vh;
+        width: 100%;
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+    .left1:hover{
+        background-color: rgb(255, 81, 0);
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    .right1:hover{
+        background-color: rgb(255, 81, 0);
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    .foot{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        top: 90vh;
+        font-size: 15px;
+        margin-left: 420px;  
+    }
+    .foot div{
+        padding-left: 10px;
+    }
+    .fa-circle{
+        color: rgb(255, 0, 0);
+    }
+
+        .course_overview{
+            height: 210vh;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction:column ;
+        }
+        .top_con{   
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-left: 30px;           
+        }
+        .btn_cont{
+            display: flex;
+            flex-direction: row;
+        }   
+        .btn1{
+            width: 35%;
+            background-color: rgb(226, 198, 198);
+            height: 190vh;    
+            display: flex;
+            flex-direction: column;      
+        }
+        .btn1 button{
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 149, 168);
+            padding: 13px 15px;
+            font-weight: bold;
+            border-radius: 30px;
+            box-shadow: 2px 2px 2px 2px black;
+            margin-top: 30px;
+            margin: 20px;
+            border: 1px solid aquamarine;
+        }
+        .btn1 button:hover{
+            background-color: black;
+            color: rgb(235, 75, 16);
+            letter-spacing: 3px;
+        }
+        #btn2{
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 32, 32);
+            padding: 10px 15px;
+            border-radius: 30px;
+            line-height: 30px;
+            margin-top: 50px;
+        }
+        .msc{
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-left: 20px;
+            letter-spacing: 2px;
+        }
+        .msc:hover{
+            color: rgb(0, 17, 255);
+        }
+        .dc511{
+            margin-top: 10px;
+            font-size: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-left: 20px;
+            letter-spacing: 2px;    
+        }
+        .fees h4{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 40px;
+            padding-left: 20px;
+        }
+        .fees h4:hover{
+            color: rgb(31, 3, 212);
+        }
+        .all_cont{
+            width: 60%;
+            height: 200vh;
+            margin-left: 10px;
+            margin-top: 20px;
+            }
+            .h1{
+                padding-top: 20px;
+                padding-left: 20px;
+            }
+            .h1:hover{
+                color: rgb(50, 50, 51);
+                text-decoration: underline;
+                font-style: italic;
+            }
+            .details{
+                font-size: 17px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-left: 20px;
+                line-height: 30px;
+                padding-top: 40px;
+                color: rgb(202, 200, 200);
+            }
+            .details:hover{
+                color: rgb(0, 0, 0);
+            }
+            .course_logo{
+                background-image: url('r1.png');
+                height: 20vh;
+                width: 20%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                margin-left: 20px;   
+            }
+            .rank{
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+                padding-left: 20px;
+                font-style: italic;
+            }
+            .staff_con{
+                position: relative;
+                height: 50vh;
+                width: 35%;
+                margin-top: 10%;
+                margin-left: 30%;
+            }
+            .staff1{
+                color: rgb(0, 0, 0);
+                font-size: 30px;
+                padding-left: 100px;
+                text-decoration: underline;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+            }
+            .staff1:hover{
+                color: rgb(21, 255, 0);
+            }
+            .staff{
+                position: relative;
+                height: 150px;
+                width: 140px;
+                background-size: 110%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                border-radius: 100%;
+                left: 40px;
+           
+                background-image: url('https://th.bing.com/th/id/OIP.7k0xbJCdMhkACQh9RWHU7AHaHa?w=186&h=186&c=7&r=0&o=5&pid=1.7');
+            }
+            .name{
+                position: absolute;
+                text-align: center;
+                font-size: 17px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 10px;
+                line-height: 25px;
+            }
+            .staff_con:hover{
+               background-color: rgb(204, 0, 255);
+            }
+            .apply{
+                width:170px;
+                height: 60px;
+                border: 1px solid black;
+                text-align: center;
+                font-size: 13px;
+                padding-top: 2px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                border-radius: 10px;
+            }
+            .apply:hover{
+                background-color: rgb(255, 12, 12);
+            }
+            #footer{
+                display: flex;
+                position: absolute;
+                width: 100%;
+                height: 90vh;
+                background-color:rgb(255, 158, 61);
+                padding-top: 20px;
+            }
+            .socal{
+                display: flex;
+               flex-direction: column;
+                width: 25%;
+                height: 100vh;   
+            }
+            .cont1{
+                background-color:rgb(245, 147, 35);
+                padding-left: 20px;   
+                font-size:25px ;
+                color: rgb(0, 0, 0);
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            }
+            #facebook{
+                color: rgb(0, 98, 245);
+                font-size: 50px;
+                padding-left: 5px;
+                padding-top: 10px;
+            }
+            #tiwtter{
+                color: rgb(0, 154, 243);
+                font-size: 50px;
+                padding-left: 3px;
+                padding-top: 10px;
+            }
+     
+            #youtube{
+                color: rgb(250, 52, 52);
+                font-size: 50px;
+                padding-left: 3px;
+                padding-top: 10px;
+            }
+            #insta{
+                color: rgb(247, 1, 173);
+                font-size: 50px;
+                padding-left: 3px;
+                padding-top: 10px;
+            }
+            #what{
+                color: rgb(1, 247, 13);
+                font-size: 50px;
+                padding-left: 7px;
+                padding-top: 10px;
+            }
+            .socal1{
+                display: flex;
+               flex-direction: column;
+                width: 25%;
+                height: 100vh;    
+            }
+            .news{
+                padding-left: 20px;
+                font-size:25px ;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .dcu{
+                font-size: 17px;
+                padding-left: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+            }
+            .dcu1{
+                font-size: 17px;
+                padding-left: 20px;;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+            }
+            .dcu2{
+                font-size: 17px;
+                padding-left: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+            }
+            .dcu3{
+                font-size: 17px;
+                padding-left: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+            }
+            .socal2{
+                display: flex;
+               flex-direction: column;
+                width: 25%;
+                height: 100vh;
+            }
+            .sitemap{
+                padding-left: 20px;
+                font-size:25px ;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .home{
+                font-size: 15px;
+                padding-left: 20px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif; 
+                padding-top: 20px;
+                line-height: 35px;
+            }     
+            .socal3{
+                display: flex;
+               flex-direction: column;
+                width: 25%;
+                height: 100vh;
+            }
+            .find{            
+                padding-left: 20px;           
+                font-size:25px ;            
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .find1{
+                font-size: 15px;
+                padding-left: 20px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif; 
+                padding-top: 20px;
+                line-height: 35px;                
+            }
+            .right div{
+                color: rgb(25, 0, 255);
+            } 
+        .text{
+        position: absolute;
+        color: rgb(240, 240, 240);
+        top: 20vh;
+        left: 20%;
+        font-size: 50px;
+        text-shadow:  7px 7px 5px rgb(255, 0, 0);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    } 
+    input[type="search"]{
+        font-size: 20px;
+        padding: 5px;
+        height: 40px ;
+        width: 100px;
+        margin-right: 40px;
+        border-radius: 10px;
+        
+    }
+    ::placeholder{
+       color: blue;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .middile{
+        width: 99%;
+        height: 110vh;
+        border: 1px solid black;
+        background-color: rgb(255, 201, 120);
+    }
+    .middile img{
+        height: 200px;
+        width: 225px;
+        background-color: azure;
+        margin-top: 20px;
+         margin-left: 16px;
+         transition:transform 2s;
+    }
+    .middile img:hover{
+        transform : scale(1.3,1.3);
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <nav class="nav">
+        <div class="left"><img src="DCU-Navy-Logo.png.webp" >     </div>  
+        <div class="right">
+        <div class="search-bar">
+            <input type="search" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div> 
+        <div ><i class="fa-sharp fa-solid fa-house"></i> <a href="home.html">Home</a> </div>
+        <div> <i class="fa-solid fa-address-card"></i> <a href="About_US.html">About us</a> </div>
+        <div><i class="fa-solid fa-phone"></i> <a href="contact.html">Contact Us </a> </div>
+        <div> <i class="fa-solid fa-user"></i> <a href="login_page.html"> Login</a> </div>
+    </div>
+    </nav>
+    <div class="con">
+        <img src="https://abroad.albany.edu/wp-content/uploads/2017/10/NUI-Galway-1000x563.jpg" id="simg">
+        <div class="text">
+            <h1 id="hd"> DCU</h1>
+            <div id="bc"> Business School</div>
+        </div>
+    
+        
+        
+        <div class="arrow" >
+            <div class="left1" onclick="fun1()">
+                <i class="fa-solid fa-less-than"></i>
+            </div>
+            <div class="right1"onclick="fun2()">
+                <i class="fa-solid fa-greater-than"></i>
+            </div>
+        </div>
+    </div>
+        <div class="foot">
+            <div  onclick="fun3(0)">
+                <i class="fa-solid fa-circle"></i>
+            </div>
+            <div  onclick="fun3(1)">
+                <i class="fa-regular fa-circle"></i>
+            </div>
+            <div  onclick="fun3(2)">
+                <i class="fa-regular fa-circle"></i>
+            </div>
+            <div  onclick="fun3(3)">
+                <i class="fa-regular fa-circle"></i>
+            </div>
+            <div  onclick="fun3(4)">
+                <i class="fa-regular fa-circle"></i>
+            </div>
+            <div  onclick="fun3(5)">
+                <i class="fa-regular fa-circle"></i>
+            </div>
+            <div  onclick="fun3(6)">
+                <i class="fa-regular fa-circle"></i>
+            </div>   
+        </div>
+    <div class="course_overview">
+        <div class="top_con">Back to Home > Our Programmes > Postgraduate Full Time > MSc in Finance</div>
+      <div class="btn_cont">
+        <div class="btn1">
+            <button>COURSE OVERVIEW</button>
+            <button>WHY DO THIS COURSE?</button>
+            <button>CAREER PROSPECTS</button>
+            <button>HOW TO APPLY</button>
+            <button>INSIGHTS</button>
+            <button>WEBINAR</button>
+            <div class="msc">MSc In Finance</div>
+            <div class="dc511">DC511 | POSTGRADUATE <br> FULL TIME</div>
+            <div class="fees">
+                <h4> DURATION</h4>
+                &nbsp; &nbsp; 12 Months
+                <hr>
+            <h4> FEES </h4>
+            &nbsp; &nbsp; €16,000
+                <hr>
+                <h4> NON EU FEES </h4>
+                &nbsp; &nbsp; €16,000
+                    <hr>
+            <h4>START DATE </h4>
+            &nbsp; &nbsp; September 2023
+                <hr>
+            <h4>   APPLICATION </h4>
+            &nbsp; &nbsp; Accepting Applications
+                <hr>
+            </div>
+              <button   id="btn2" > CONTACT US</button>
+            <button   id="btn2"> KEEP IN TOUCH</button></div>
+        <div class="all_cont">
+            <h1 class="h1">Course Overview</h1>
+            <div class="details">
+                The MSc in Finance is a one-year Masters programme providing a leading European finance education, a high degree of flexibility in your learning experience and modern industry-relevant specialisms. Our programme is structured as a core learning first semester, followed by two specialist streams in the second semester and the completion of a dissertation over the summer semester. The two streams are Capital Markets and Sustainable Innovative Finance. <br>
+                Through these streams and excellent practical and research-informed core learning, we allow you to specialize in a manner that reflects your interests and career aspirations. We offer an ideal path for graduates of business and economics degrees and non, who wish to undertake a career in finance by obtaining a leading European postgraduate qualification.
+                
+                Candidates apply for admission to the M.Sc. in Finance (Common Entry) which provides a common pathway into two specialised streams. The two streams are Capital Markets and Sustainable Innovative Finance., and all have the first semester in common. At the end of the first semester, with the help and advice of faculty, each student will choose which stream to take.</div>
+                <div class="course_logo"></div>
+                <div class="apply">APPLY FOR STUDY  <br> ABROAD OR DOUBLE <br> DEGREE
+                </div>
+                <div class="rank">Ranked 1st in Ireland and 49th Worldwide in the category of Financial Markets
+                </div>
+                <div class="staff1">staff</div>
+             <div class="staff_con">
+                <div class="staff">   </div>
+                    <div class="name">DR.Sandeep Keshava Rao
+                        <div >
+                            MSc Finance Course Chair / Assistant Professor of Finance
+                        </div> 
+                    </div>
+             </div>
+        </div>
+      </div>
+    </div >
+    <div class="middile">
+        <img src="https://th.bing.com/th/id/OIP.iLQDeoa05XfPfl1FdMcnNAHaDu?w=319&h=176&c=7&r=0&o=5&pid=1.7" alt="">
+        <img src="https://th.bing.com/th/id/OIP.yxW5B-1g1L-fzVW7xa3gNAHaE8?pid=ImgDet&rs=1" alt="">
+        <img src="https://15pictures.com/wp-content/gallery/15-pictures-hotels/hotels-12.jpg" alt="">
+        <img src="https://www.dcuaccommodation.ie/wp-content/uploads/2021/05/Communal-Longue-Area-at-DCU-Student-Accomodation.jpg" alt="">
+        <img src="https://t-ec.bstatic.com/images/hotel/max1280x900/128/128730161.jpg" alt="">
+        <img src="https://www.dcurooms.com/wp-content/uploads/2020/06/DCU-Rooms-Glasnevin-Campus-apartment-with-kitchen-and-dining-area.jpg" alt="">
+        <img src="https://th.bing.com/th/id/OIP.vHObfT2I4Z_oAEInEvod-wHaE8?pid=ImgDet&rs=1" alt="">
+        <img src="https://th.bing.com/th/id/R.3ba5d1a83c77babfdc968fc1a7118a2a?rik=0%2f9A0oVCA3oHKQ&riu=http%3a%2f%2fwww.anglo.uk.com%2fwp-content%2fuploads%2f2019%2f03%2fDCU_Rooms_Glasnevin_campus_and_the_Helix_Exterior.jpg&ehk=hZq85LPLs%2b9jT2OxXrDsaDSYuY7rk8XM8ZMbVdGOMoI%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img src="https://th.bing.com/th/id/R.b91a703cf40b3edc3d98e2cc02f972c7?rik=lmjI0%2bAux9jcnw&riu=http%3a%2f%2fkarandash.ua%2fsite%2fassets%2ffiles%2f68740%2fdcu-college-park.jpg&ehk=SpOAXdCew%2fMZbz%2bgENt31Om0%2f%2b2iL8BlgR2p0Xg%2bmk8%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img src="https://edulinks.vn/wp-content/uploads/2018/05/dcu1-1.jpg" alt="">
+        <img src="https://th.bing.com/th/id/R.f327996fbacf00fde0cdad276b2ad98a?rik=O0kw2vSb5TFpMQ&riu=http%3a%2f%2fwww.johnpaul.ie%2fwp-content%2fuploads%2fEducation-DCU-Nursing-Night-shotSN01-1024x707.jpg&ehk=%2bqSDEaagnNO6gv6MeWrJbmSxv4mRp1iG8h9AHOz6m6w%3d&risl=&pid=ImgRaw&r=0" alt="">
+
+        <img src="https://framinghamsource.com/wp-content/uploads/2020/03/DCU_Center_-_Worcester_Massachusetts_USA-scaled.jpg"/>    
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <div class="socal">
+            <div class="cont1">SOCIAL CHANNELS</div>
+            <div>
+                <i class="fa-brands fa-facebook" id="facebook"></i>
+                <i class="fa-brands fa-square-twitter" id="tiwtter"></i>
+                <i class="fa-brands fa-youtube" id="youtube"></i>
+                <i class="fa-brands fa-square-instagram" id="insta"></i>
+                <i class="fa-brands fa-square-whatsapp" id="what"></i>
+            </div>
+
+        </div>
+        <div class="socal1">    
+            <div class="news">LATEST NEWS</div>  
+            <div class="dcu">
+                DCU Marketing, <br> Innovation, and <br>Technology students <br> provide creative <br> consulting advice to <br> The Cool Food <br> School <br>02/03/2023 - 9:50 am
+            </div>
+            <div class="dcu1">Bernard Brogan My <br> MSc Management <br> (Business) <br> Experience <br>
+                24/02/2023 - 6:38 pm</div>
+                <div class="dcu2">
+                    DCU Executive MBA  Louise Walsh, 1st year shares her thoughts!
+                    14/02/2023 - 4:31 pm
+                </div>
+                <div class="dcu3">
+                    A slice of LIFE with NTR plc CEO Rosheen McGuckian
+                    14/02/2023 - 4:06 pm
+                </div>
+        </div>
+        <div class="socal2">
+            <div class="sitemap">SITEMAP</div>
+            <div class="home">HOME <br>
+                BUSINESS INSIGHTS <br>
+                COLLABORATE WITH US <br>
+                ABOUT US > <br>
+                OUR PROGRAMMES > <br>
+                SCHOLARSHIPS <br>
+                FACULTY AND RESEARCH > <br>
+                EXECUTIVE EDUCATION > <br>
+                UPCOMING EVENTS <br>
+                ALUMNI <br>
+                DEANS HONOURS LIST <br>
+                NEWS <br>
+                CONTACT US</div>
+        </div>
+        <div class="socal3">
+            <div class="find">NEED TO FIND OUT <br> MORE?</div>
+            <div  class="find1">
+                DCU MAIN WEBSITE <br> DCU STUDENT APPS <br> DCU STAFF APPS <br> DISCLAIMER <br> PRIVACY POLICY</div>
+        </div>
+    </div>
+  </div> 
+  <script>
+    let i=0
+    let a=["https://www.dcu.ie/sites/default/files/styles/traditional_television/public/media/2020/05/06/campus_img6.jpg?itok=3_GaS_VE","https://www.studentworldonline.com/userfiles/images/bigstock--128471459.jpg","https://www.dcu.ie/sites/default/files/styles/widescreen_television/public/media/2018/07/23/library.jpg?itok=7aJrRbvk","https://www.dcurooms.com/wp-content/uploads/2020/06/DCU-Rooms-Glasnevin-Campus-with-illuminated-DCU-sign-at-night.jpg","https://www.interstudioviaggi.it/wp-content/uploads/2019/11/dcu-college-park-1024x750.jpg","https://images3.content-hci.com/commimg/myhotcourses/institution/CH/section/myhc_305339_580px.jpg","https://i.ytimg.com/vi/OiyVTxv3FVY/maxresdefault.jpg"]
+    let data=[{heading :"DCU",cont:"Business School"},
+        {heading :"DCU",cont:"Business School"},
+        {heading :"DCU",cont:"Business School"},
+        {heading :"DCU",cont:"Business School"},
+        {heading :"DCU",cont:"Business School"},
+        {heading :"DCU",cont:"Business School"},
+        {heading :"DCU",cont:"Business School"}]
+
+    
+    function fun2()
+    {
+        let iref=document.getElementById("simg")
+        let hrf=document.getElementById("hd")
+            let brf=document.getElementById("bc")
+        
+        let dref=document.getElementsByClassName("fa-circle")
+        let cl=dref[i].classList
+        cl.remove("fa-solid")
+        cl.add("fa-regular")
+        dref[i].classList=cl
+        i++
+        
+        if (i>=a.length)
+        {
+            i=0
+        }
+        iref.src=a[i]
+        hrf.innerHTML=data[i].heading
+        brf.innerHTML=data[i].cont
+        let cl1=dref[i].classList
+        cl1.remove("fa-regular")
+        cl1.add("fa-solid")
+        dref[i].classList=cl1
+    }
+     setInterval(fun2,1000)
+    function fun1()
+    {
+      
+        let iref=document.getElementById("simg")
+
+        let hrf=document.getElementById("hd")
+            let brf=document.getElementById("bc")
+        let dref=document.getElementsByClassName("fa-circle")
+        let cl=dref[i].classList
+        cl.remove("fa-solid")
+        cl.add("fa-regular")
+        dref[i].classList=cl
+        i--
+        
+        if (i<0)
+        {
+            i=a.length-1
+        }
+        iref.src=a[i]
+        hrf.innerHTML=data[i].heading
+            brf.innerHTML=data[i].cont
+        let cl1=dref[i].classList
+        cl1.remove("fa-regular")
+        cl1.add("fa-solid")
+        dref[i].classList=cl1
+    }
+    function fun3(x)
+    {
+        let iref=document.getElementById("simg")
+        let hrf=document.getElementById("hd")
+            let brf=document.getElementById("bc")
+        let dref=document.getElementsByClassName("fa-circle")
+        let cl=dref[i].classList
+        cl.remove("fa-solid")
+        cl.add("fa-regular")
+        dref[i].classList=cl
+        i=x 
+        iref.src=a[i]
+   
+        let cl1=dref[i].classList
+        hrf.innerHTML=data[i].heading
+            brf.innerHTML=data[i].cont
+        cl1.remove("fa-regular")
+        cl1.add("fa-solid")
+        dref[i].classList=cl1
+    }
+</script>
+
+</body>
+</html>
+
+

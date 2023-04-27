@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+      *{
+            margin: 0px;
+            outline: 0px;
+
+        }
+        .nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18vh;
+    width: 100%;
+    background-color: rgb(253, 93, 0);
+   
+}
+.left img{
+
+    width: 200px;
+    height: 80px;
+    padding-left: 60px;     
+}
+
+.right{
+        display: flex;
+}
+
+.right .search-bar {
+    position: relative;
+}
+
+.right .search-bar input{
+    width: 120px;
+}
+
+.right .search-bar i{
+    position: absolute;
+    left: 90PX;
+    top: 10px;
+}
+
+.right div{
+    padding-right: 40px;
+    font-size: 20px;
+    color: blue;
+}
+
+.right div a:hover{
+    color: rgb(255, 255, 255);
+  
+}
+ .right div a:link{
+    color: chartreuse;
+    text-decoration: none;
+}
+input[type="search"]{
+        font-size: 20px;
+        padding: 5px;
+        height: 40px ;
+        width: 100px;
+        margin-right: 40px;
+        border-radius: 10px;
+        
+    }
+ 
+
+  
+
+     
+     .contact1{
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 100%;
+            background-image: url("https://i0.wp.com/postgrad.ie/wp-content/uploads/2018/06/DCU-campus.jpg");
+     }
+   
+     .h1{
+        position: absolute;
+        color: rgb(255, 248, 248);
+        margin-top: 45vh;
+        margin-left: 5%;
+        font-size: 50px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-shadow:  7px 5px rgb(0, 0, 0);
+        letter-spacing: 7px;
+     }
+     .h1:hover{
+        color: yellow;
+     }
+     .anchor{
+        padding-left: 30px;
+        padding-top: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 17px;
+        color: blue;
+     }
+     .login_part{
+        width: 95%;
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+     
+        margin: auto;
+        margin-top: 20px;
+     }
+     .c1{
+        width: 22%;
+       
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 50px;
+        color: rgb(4, 0, 219);
+        
+     }
+     .m{
+        line-height: 25px;
+        padding-top: 20px;
+        
+     }
+     .s1{
+        padding-left: 5px;
+        padding-top: 10px;
+     
+        padding-top: 20px;
+     }     
+            #facebook{
+                color: rgb(0, 98, 245);              
+            }
+            #tiwtter{
+                color: rgb(0, 154, 243);                
+            }     
+            #youtube{
+                color: rgb(250, 52, 52);               
+            }    
+            #insta{
+                color: rgb(234, 0, 255);               
+            }
+            #what{
+                color: rgb(1, 247, 13);
+            }
+.c2{
+        width: 30%;
+  
+        padding-left: 10px;
+        text-align: center;
+        padding: 5px 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+     }
+     .c2 input{
+     
+        font-size: 17px;
+       
+       
+     }
+     .c2 div{
+        font-size: 13px;
+      
+
+        padding: 5px 10px;
+        color: black;
+     }
+     .c2 select{
+        margin-top: 5px;
+        
+      
+        font-size: 15px;
+        padding: 5px 10px;
+     
+     }
+     .c2 textarea{
+        margin-top: 5px;
+        font-size: 17px;
+       
+     }
+    
+     .c3{
+        width: 100%;
+        height: 50vh;
+     }
+     #footer{
+                display: flex;
+                position: relative;
+                width: 100%;
+                height: 90vh;
+                background-color:rgb(255, 184, 143);
+                padding-top: 20px;
+            }
+            .socal{
+                display: flex;
+               flex-direction: column;
+                width: 25%;
+                height: 100vh;
+            
+               
+            }
+            .cont1{
+                background-color:rgb(255, 184, 143);
+                padding-left: 20px;
+               
+                font-size:25px ;
+                color: rgb(0, 0, 0);
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            }
+            
+          
+            #facebook{
+                color: rgb(0, 98, 245);
+                font-size: 50px;
+                padding-left: 5px;
+                padding-top: 10px;
+            }
+            #tiwtter{
+                color: rgb(0, 154, 243);
+                font-size: 50px;
+                padding-left: 3px;
+                padding-top: 10px;
+            }
+     
+            #youtube{
+                color: rgb(250, 52, 52);
+                font-size: 50px;
+                padding-left: 3px;
+                padding-top: 10px;
+            }
+     
+            #insta{
+                color: rgb(247, 1, 173);
+                font-size: 50px;
+                padding-left: 3px;
+                padding-top: 10px;
+            }
+            #what{
+                color: rgb(1, 247, 13);
+                font-size: 50px;
+                padding-left: 7px;
+                padding-top: 10px;
+            }
+     
+     
+     
+            .socal1{
+                display: flex;
+               flex-direction: column;
+                width: 25%;
+                height: 100vh;
+                
+            }
+            .news{
+                padding-left: 20px;
+                font-size:25px ;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+          
+            .dcu{
+                font-size: 17px;
+                padding-left: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+            }
+            .dcu1{
+                font-size: 17px;
+                padding-left: 20px;;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+            }
+            .dcu2{
+                font-size: 17px;
+                padding-left: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+            }
+            .dcu3{
+                font-size: 17px;
+                padding-left: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+            }
+           
+            .socal2{
+                display: flex;
+               flex-direction: column;
+                width: 25%;
+                height: 100vh;
+           
+            }
+            .sitemap{
+            
+                padding-left: 20px;
+           
+                font-size:25px ;
+             
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .home{
+                font-size: 15px;
+                padding-left: 20px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif; 
+                padding-top: 20px;
+                line-height: 35px;
+            }
+            
+     
+            .socal3{
+                display: flex;
+               flex-direction: column;
+                width: 25%;
+                height: 100vh;
+   
+                
+               
+            }
+            .find{
+             
+                padding-left: 20px;
+             
+                font-size:25px ;
+             
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .find1{
+                font-size: 15px;
+                padding-left: 20px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif; 
+                padding-top: 20px;
+                line-height: 35px;
+                
+            }
+            .pre{
+                position: absolute;
+                background-color: rgb(0, 118, 221);
+                padding: 10px 40px;
+                margin-top: 10px;
+                text-align: center;
+                margin-left: 40%;
+                font-size: 20px;
+                color: azure;
+                font-style: italic;
+                border-radius: 30px;
+                border: 2px solid red  ;
+            }
+            .pre:hover{
+                background-color: chocolate;
+                color: black;
+                font-size:24px ;
+            }
+            .btn{
+            background-color: red;
+        }
+
+  
+</style>
+<body>
+  
+<nav class="nav">
+    <div class="left"><img src="DCU-Navy-Logo.png.webp" >     </div>  
+    <div class="right">
+    <div class="search-bar">
+        <input type="search" placeholder="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div> 
+    <div ><i class="fa-sharp fa-solid fa-house"></i> <a href="home.html">Home</a> </div>
+    <div> <i class="fa-solid fa-address-card"></i> <a href="About_US.html">About us</a> </div>
+    <div><i class="fa-solid fa-phone"></i> <a href="contact.html">Contact Us </a> </div>
+    <div> <i class="fa-solid fa-user"></i> <a href="login_page.html"> Login</a> </div>
+</div>
+</nav>
+    <div class="contact1">
+    <h1 class="h1">Contact Us</h1></div>
+    <div class="anchor"> <a href="home.html">back to home</a>&nbsp;>Contact Us </div>
+
+
+
+    <div class="login_part">
+        <div class="c1">
+            <h1 >CONTACT <br> DCU <br>
+                BUSINESS <br> SCHOOL</h1>
+                <p class="m">Dublin City University,
+                    Dublin 9, Ireland.
+                    Phone +353 1 700 5265</p>
+               
+                    <div class="s1">
+                        <i class="fa-brands fa-square-facebook"id="facebook"></i>
+                       
+                        <i class="fa-brands fa-square-twitter" id="tiwtter"></i>
+                        <i class="fa-brands fa-youtube" id="youtube"></i>
+                        <i class="fa-brands fa-square-instagram" id="insta"></i>
+                        <i class="fa-brands fa-square-whatsapp" id="what"></i>
+                    </div>
+        
+        
+        </div>
+        <div class="c2">
+            <form>
+            <input type="text" placeholder="Your name*" required/>
+            <div>The field is required.</div>
+            <input type="text" placeholder="enter phone no*" required/>
+            <div>The field is required.</div>
+            <input type="email" placeholder="Your Email*" required/>
+            <div>The field is required.</div>
+            <select >
+                <option value="What would you to contact">What would you to contact</option>
+                <option value="general">General Enquiry</option>
+                <option value="Post Grad Enquire">Post Grad Enquiry</option>
+                <option value="Under Grad  Enquire">Under Grad  Enquiry</option>
+                <option value="Under Grad  Enquire">Executive Education Enquiry</option>
+                <option value="Under Grad  Enquire">PHD Programme  Enquiry</option>
+                <option value="Alumni Enquiry">Alumni Enquiry</option>
+                <option value="Bord Via Programme">Bord Via Programme</option>
+                <option value="Hire aDCU Student">Hire aDCU Student</option>
+            </select>
+            <div>The field is required.</div>
+            <select >
+                <option > MSc in Human Resoure </option>
+                <option>MSc in Accounting</option>
+                <option >MSc in Finance</option>
+                <option >MSC in Digital Marketing</option>
+            
+                <option >MSc In Managment (Business)</option>
+                <option >Msc n Electronic Commerce</option>
+                <option >MSc In Managment (Strategy)</option>
+                <option >Exeutive MBA</option>
+                <option >MSc In Management Opration</option>  
+             
+                 <option>MSc In Global Managment</option>
+                 <option >MSc In Emergency Managment</option>
+            </select>
+            <textarea name="" id="" cols="25" rows="10" placeholder="Your massage"></textarea>
+            <div>The field is required.</div>
+            <div>I agree to the terms and  <br> conditions laid out in the</div>
+            <input type="submit" value="SUBMIT" class="btn">  
+            <input type="reset" value="RESET" class="btn"> 
+        </div> </form>
+        <div class="c3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.364597872946!2d78.44461!3d17.442255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91eab079a02d%3A0x8dab2769c038c0fd!2sVector%20India%20institute!5e0!3m2!1sen!2sin!4v1680250027456!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+    <div id="footer">
+        <div class="socal">
+            <div class="cont1">SOCIAL CHANNELS</div>
+            <div>
+                <i class="fa-brands fa-facebook" id="facebook"></i>
+                <i class="fa-brands fa-twitter"id="tiwtter"></i>
+            
+                <i class="fa-brands fa-youtube" id="youtube"></i>
+                <i class="fa-brands fa-square-instagram" id="insta"></i>
+                <i class="fa-brands fa-square-whatsapp" id="what"></i>
+            </div>
+
+        </div>
+        <div class="socal1">
+            
+            <div class="news">LATEST NEWS</div>
+           
+            <div class="dcu">
+                DCU Marketing, <br> Innovation, and <br>Technology students <br> provide creative <br> consulting advice to <br> The Cool Food <br> School <br>02/03/2023 - 9:50 am
+            </div>
+            <div class="dcu1">Bernard Brogan My <br> MSc Management <br> (Business) <br> Experience <br>
+                24/02/2023 - 6:38 pm</div>
+                <div class="dcu2">
+                    DCU Executive MBA  Louise Walsh, 1st year shares her thoughts!
+                    14/02/2023 - 4:31 pm
+                </div>
+                <div class="dcu3">
+                    A slice of LIFE with NTR plc CEO Rosheen McGuckian
+                    14/02/2023 - 4:06 pm
+                </div>
+        </div>
+        <div class="socal2">
+            <div class="sitemap">SITEMAP</div>
+            <div class="home">HOME <br>
+                BUSINESS INSIGHTS <br>
+                COLLABORATE WITH US <br>
+                ABOUT US > <br>
+                OUR PROGRAMMES > <br>
+                SCHOLARSHIPS <br>
+                FACULTY AND RESEARCH > <br>
+                EXECUTIVE EDUCATION > <br>
+                UPCOMING EVENTS <br>
+                ALUMNI <br>
+                DEANS HONOURS LIST <br>
+                NEWS <br>
+                CONTACT US</div>
+        </div>
+        <div class="socal3">
+            <div class="find">NEED TO FIND OUT <br> MORE?</div>
+            <div  class="find1">
+                DCU MAIN WEBSITE <br> DCU STUDENT APPS <br> DCU STAFF APPS <br> DISCLAIMER <br> PRIVACY POLICY</div>
+        </div>
+
+    </div>
+    <button class="pre"> <a href="fornt.html">pre.. page</a> </butto>
+
+  
+</body>
+</html>

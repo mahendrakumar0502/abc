@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Plaza</title>
+    <style>
+        *{
+            margin: 0px;
+            outline: 0px;
+            padding: 0px;
+        }
+        #nav{
+           
+                                                                             
+            width: 100%;
+            height: 10vh;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            padding-left: 15px;
+            align-items: center;
+            color: rgb(255, 255, 255);
+       
+            font-size: 20px;
+        }
+        
+        
+        .left_logo{
+            padding-left: 30px;
+            width: 200px;
+            height: 40px;
+            background-image: url("https://www.guestreservations.com/assets/f415e69c/images/logo/logo-bell-dark.svg");
+            background-repeat: no-repeat;
+            
+        }
+        .logo_content{
+          
+            font-size: 15px;
+            padding-top: 25px;
+            color: aliceblue;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        .mid{
+           display: flex;
+        
+        
+        }
+        .mid div{
+            
+            padding-left: 50px;
+        }
+        .mid div:hover{
+            color: crimson;
+        }
+        .right{
+            padding-left: 60px;
+            color: rgb(230, 103, 0);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .right div{
+            color: aliceblue;
+        }
+        .btn1{
+            font-size: 20px;
+            padding: 15px 35px;
+            margin-left: 70%;
+            background-color: chocolate;
+            color: aliceblue;
+            border: 0px;
+        }
+        .btn1:hover{
+            color: rgb(0, 0, 219);
+            background-color: rgb(255, 115, 0);
+        }
+        .img_map{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: 70vh;
+        }
+        .img_map1{
+            position: relative;
+            width: 100%;
+            animation: demo 25s infinite;
+            background-image: url("https://images.getaroom-cdn.com/image/upload/s--KPMHQTlE--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938491/022087b88b1dcb79be07f587d23ccfd89be53a2a?atc=e7cd1cfa");
+            background-size: 100% 100%;
+           
+        }
+        @keyframes demo {
+            10%{
+                background-size: 100% 100%;
+                background-image: url("https://th.bing.com/th/id/OIP.yBzy15rlMLEfll12IeotogHaE8?pid=ImgDet&rs=1");
+            }
+            20%{
+                background-size: 100% 100%;
+                background-image: url("https://www.hotelscombined.com/news/wp-content/uploads/sites/314/2020/09/Park-Hyatt-Melbourne-ICE-49863-62541586_3XL-307397-scaled.jpg");
+            }
+            30%{
+                background-size: 100% 100%;
+                background-image: url("https://lajollamom.com/wp-content/uploads/2019/01/Fairmont-Grand-Del-Mar-luxury-hotel-scaled.jpg");
+            }
+            40%{
+                background-size: 100% 100%;
+                background-image: url("https://www.tripsavvy.com/thmb/nfOKHTTsm0AWcapvlb95IPyqtPs=/2121x1414/filters:fill(auto,1)/tampa-marriott-5c1a5615c9e77c0001c8c8e7.jpg");
+            }
+            50%{
+                background-size: 100% 100%;
+                background-image: url("https://media.cntraveler.com/photos/561fc580799ed1fe16a2e112/master/pass/The-Palazzo-Pool-LV-Courtesy.jpg");
+            }
+            60%{
+                background-size: 100% 100%;
+                background-image: url("https://topinspired.com/wp-content/uploads/2013/07/225.jpg");
+            }
+            70%{
+                background-size: 100% 100%;
+                background-image: url("https://estateintel.com/app/uploads/2018/05/Accra-Marriott-Hotel-Exterior.JPG.jpg");
+            }
+            80%{
+                background-size: 100% 100%;
+                background-image: url("https://th.bing.com/th/id/R.faad048db0f7dbe467baacf46b013ded?rik=COPz7Y1IuyxHNg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-z67SeM09Qas%2fTyg9YtMPLVI%2fAAAAAAAABac%2fJZ21nDXRBgc%2fs1600%2ftop%2bbeautiful%2bhotel%2bin%2bthe%2bworld.jpg&ehk=fxNKfK6Sun53S%2f8U%2fSQ4WbTWwUSfIM30bHaxlHTi5%2bk%3d&risl=&pid=ImgRaw&r=0");
+            }
+            90%{
+                background-size: 100% 100%;
+                background-image: url("https://th.bing.com/th/id/R.4bd3cf37915ee268cddbafaa1e69c831?rik=T6ItBycgnwKuLQ&riu=http%3a%2f%2fwww.rentacarbestprice.com%2fwp-content%2fuploads%2f2016%2f09%2fimage-26.jpeg&ehk=93xpzvZl9v%2bkpSGTVRNsS7STc7o3mBDHNRD4RpBbUNQ%3d&risl=&pid=ImgRaw&r=0");
+            }
+            100%{
+                background-size: 100% 100%;
+                background-image: url("https://r-cf.bstatic.com/xdata/images/xphoto/max1440/48351282.jpg?k=9d6de5f1bdb9eafd8c8e860f63bd0feb47dc9905acb11dd09a324669829b6854&o=");
+            }
+        }
+        .img_map2{
+            position: relative;
+            width: 52%;
+            height: 60vh;
+   
+            background-size: 100% 100%;
+          
+            
+        }
+        .Pride_Plaza{
+            position: relative;
+            padding-left: 30px;
+            width: 100%;
+            height: 40vh;
+           
+        }
+
+        .Pride_Plaza div{
+            font-size: 45px;
+            padding-top: 10px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .Pride_Plaza h4{
+        
+            color: rgb(255, 174, 0);
+        }
+        .Pride_Plaza p{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .fornt_img{
+            width: 70px;
+            height: 50px;
+
+        }
+        
+        .Book_Rooms{
+            position: sticky;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 25vh;
+            background-color: darkseagreen;
+           
+        }
+        .Book_Rooms_con{
+            display: flex;
+            flex-direction: row;
+            height: 15vh;
+            width: 90%;
+            margin: auto;
+            background-color: aliceblue;
+          
+            
+        }
+        .c1{
+            height: 15vh;
+            width: 25%;
+       
+        }
+        .c1_con{
+            padding-top: 20px;
+            padding-left: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .c1_p{
+            padding-top: 10px;
+            padding-left: 10px;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+      
+        .c3{
+            height: 15vh;
+            width: 13%;
+       
+           
+        }
+        .c3_con{
+      
+            padding-top: 20px;
+            padding-left: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+     
+        .c3_p{
+            padding-top: 5px;
+            padding-left: 10px;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .c4{
+            height: 15vh;
+            width: 22%;
+            background-color: rgb(126, 126, 83);
+            color: white;
+           
+        }
+        .c4:hover{
+            background-color: rgb(252, 0, 0);
+            
+        }
+        .c4_p{
+            text-align: center;
+            color: white;
+            padding-top: 40px;
+            font-size: 25px;
+        }
+        #Rooms_Rates{
+      
+            padding-top: 10px;
+            width: 100%;
+            height: 460vh;
+            background-color: bisque;
+           
+
+        }
+        .Rooms_Rates_head{
+            padding-top: 10px;
+            padding-left: 47px;
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        .h2{
+            padding-left: 47px;
+            padding-top: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .image_cont{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: 35vh;
+            border: 3px solid rgb(213, 213, 231);
+            margin: auto;
+            
+            
+        }
+        .left_img img{
+            width: 280px;
+            height: 200px;
+            padding-left: 20px;
+            padding-top: 14px;
+        }
+        .mid_cont{
+            font-size: 20px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-left: 20px;
+            padding-top: 14px;
+            line-height: 25px;
+        }
+        .mid_air_logo{
+            font-size: 15px;
+        }
+        .mid_anchor{
+            padding-top: 28px;
+            font-size: 15px;
+        }
+        .btn{
+            
+            background-color: rgb(238, 0, 147);
+            color: beige;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+           margin-top: 70px;
+           margin-left: 80px;
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+       
+        .btn:hover{
+            background-color: rgb(102, 255, 0);
+            color: blue;
+        }
+       
+        .find_btn{
+            width: 28%;
+            height: 8vh;
+            font-size: 15px;
+            border: 2px solid rgb(223, 63, 0);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            background-color:white;
+            color: rgb(252, 67, 0);
+            margin-top: 30px;
+            margin-left: 35%;
+         
+            
+        }
+        .find_btn:hover{
+            background-color: rgb(222, 135, 135);
+            color: rgb(0, 0, 0);
+        }
+
+        
+        .About_Pride_Hotel{
+            width: 100%;
+            height: 88vh;
+            background-color: aquamarine;
+      
+
+
+        }
+        .About_Pride_Hotel_heading{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
+            padding-top: 40px;
+            padding-left: 40px;
+        }
+        .About_Pride_Hotel_content{
+          font-size: 16px;
+            padding-left: 40px;
+            padding-top: 20px;
+            padding-right: 40px;
+            color: rgb(170, 179, 179);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .About_Pride_Hotel_content:hover{
+            color: black;
+           
+        }
+        .Amenities{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 30vh;
+            background-color: rgb(255, 255, 255);
+           font-size: 25px;
+        }
+       
+        #a1{
+            color: green;
+        }
+
+        .Amenities_div1{
+            font-size: 20px;
+            margin-top: 30px;
+            width: 30%;
+            height: 20vh;
+            line-height: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .Amenities_div2{
+            font-size: 20px;
+            margin-top: 30px;
+            width: 30%;
+            height: 20vh;
+            line-height: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .Amenities_div3{
+            font-size: 20px;
+            margin-top: 30px;
+            width: 30%;
+            height: 20vh;
+            line-height: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #Location{
+            width: 100%;
+            height: 70vh;
+           
+           
+        }
+        .location_map{
+            background-color: rgb(255, 147, 250);
+            
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;   
+        }
+        .data{
+            text-align: right;
+            font-size: 15px;
+            padding-right: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        .big_map{
+          width: 90%;
+        }
+        
+        .Near_Hotels{
+            width: 100%;
+            height: 5vh;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 20px;
+
+           
+        }
+        .img_grid{
+            width: 85%;
+            height: 60vh;
+            display: grid;
+            padding-top: 5px;
+            position: relative;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 50px;
+            
+           
+        }
+        .img_grid div{
+            margin: auto;
+            height: 27vh;
+            width: 85%;
+            background-size: 100% 100%;
+           padding-left: 25px;
+           margin-left: 40px; 
+           transition:transform 1s;
+            }
+        .img_grid div:hover{
+            opacity: 0.7;
+            transform : scale(1.1,1.1);
+         }
+          
+   
+        .one{
+           
+            color: aliceblue;
+            font-size: 18px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(rgba(34, 28, 28,0.6),rgba(22, 22, 32, 0.6)),url('https://images.getaroom-cdn.com/image/upload/s--thxplKIe--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665857420/d3bcd7db7ae7033b7884bb00bed9865af010e8d1?atc=e7cd1cfa');
+        }
+        .two{
+            color: aliceblue;
+            font-size: 18px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(rgba(34, 28, 28,0.6),rgba(22, 22, 32, 0.6)),url('https://images.getaroom-cdn.com/image/upload/s--4JPOUDW_--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1666028100/59614d6ed2c19f53fdbfd5c77078a5281311b1d8?atc=e7cd1cfa');
+        }
+        .tree{
+            color: aliceblue;
+            font-size: 18px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(rgba(34, 28, 28,0.6),rgba(22, 22, 32, 0.6)),url('https://images.getaroom-cdn.com/image/upload/s--Jh4J4q7z--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1673507169/4d3758fa25a11274c4d73517a7ac7ba16440462f?atc=e7cd1cfa');
+        }
+        .for{
+            color: aliceblue;
+            font-size: 18px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(rgba(34, 28, 28,0.6),rgba(22, 22, 32, 0.6)),url('https://images.getaroom-cdn.com/image/upload/s--K83d8Nqw--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1666633461/ca668bcbd20c05ef5f038730843a73f628512683?atc=e7cd1cfa');
+        }
+        .five{
+            color: aliceblue;
+            font-size: 18px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(rgba(34, 28, 28,0.6),rgba(22, 22, 32, 0.6)),url('https://images.getaroom-cdn.com/image/upload/s--hHPs7q8j--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1665857398/0fe7fd2e5b9b731475043ef2955f120daa7c5db6?atc=e7cd1cfa');
+        }
+        .six{
+            color: aliceblue;
+            font-size: 18px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(rgba(34, 28, 28,0.6),rgba(22, 22, 32, 0.6)),url('https://images.getaroom-cdn.com/image/upload/s--Xm5klvcL--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1665859585/8379096153873c285dfddaeac15d02c3bf0a6576?atc=e7cd1cfa');
+        }
+        .fa-sharp{
+            font-size: 12px;
+            color: rgb(255, 153, 0);
+            padding-left: 5px;
+            
+        }
+        .Guest_Reservations{
+        
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 60vh;
+            background-position: 100% 100%;
+            margin-top: 40px;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(rgba(36, 19, 19,0.7),rgba(16, 16, 31,0.6)),url('https://images.getaroom-cdn.com/image/upload/s--ZNp-GVfF--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938481/00e245cfadd6b9acf1c94623a04da6711cdbba9f?atc=e7cd1cfa');
+          
+          
+         
+        }
+        .Guest_Reservations_logo{
+            background-image: url('https://www.guestreservations.com/assets/f415e69c/images/logo/logo-bell-dark.svg');
+            margin-left: 50px;
+            margin-top: 55px;
+            width: 30%;
+            height: 10vh;
+            background-repeat: no-repeat;
+      
+
+          
+       
+        
+           
+           
+        }
+       
+        .guest_Reservations_data{
+            color: aliceblue;
+            font-size: 17px;
+            font-family:Arial, Helvetica, sans-serif;
+            line-height: 30px;
+            padding-left:  50px;
+            letter-spacing: 1px;
+            
+        }
+        .leran_more{
+            color: rgb(255, 208, 0);
+            font-size: 17px;
+            padding-top: 60px;
+            font-family:Arial, Helvetica, sans-serif;
+            line-height: 30px;
+            padding-left:  50px;
+            letter-spacing: 1px;
+        }
+       
+           
+        
+        .Footer{
+            display: flex;
+            flex-direction: row;
+         
+           margin-top: 30px;
+     
+            background-color: rgb(33, 66, 75);
+            
+        }
+       
+       .left_footer{
+        padding-left: 50px;
+        padding-top: 50px;
+        font-size: 20px;
+       }
+       .footer_logo{
+        height: 30vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        padding-top: 30px;
+        letter-spacing: 1.5px;
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-image: url('https://www.guestreservations.com/assets/237ed65f/images/logo-dark-tm.svg');
+       }
+       .fb_logo{
+            color: black;
+       }
+
+       .mid_footer{
+            padding-left: 30%;
+            padding-top: 10%;
+            line-height: 30px;
+         
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+       .mid_footer_con{
+            font-size: 15px;
+       }
+       .right_footer{
+            padding-left: 10%;
+            line-height: 30px;
+            padding-top: 10%;
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+       .right_footer_con{
+        font-size: 15px;
+       }
+       .hr{
+      
+            width: 100%;
+            height: 10vh;
+            background-color: rgb(29, 67, 88);
+        }
+        .hr_con{
+            display: flex;
+            flex-direction: row;
+        }
+        .hr_left{
+            font-size: 15px;
+            padding-left: 30px;
+            padding-top: 5px;
+        }
+        .hr_right{
+            font-size: 16px;
+            text-align: right;
+            padding-right: 40px;
+            padding-bottom: 10px;
+            
+        }
+      
+
+    
+    </style>
+</head>
+<body>
+
+    <nav id="nav">
+
+        <div class="left_logo">
+            <div class="logo_content">An independent travel network</div>
+        </div>
+        <div class="mid">
+            <div>Groups(9+ Rooms)</div>
+            <div>Travel Guides</div>
+            <div>My Booking</div>
+        </div>
+        <div class="right"><i class="fa-solid fa-phone"></i>&nbsp; Call now
+            <div>0005600 004 564</div>
+        </div>
+        
+    </nav>
+   
+   
+    <div class="Pride_Plaza"> 
+       
+            <div>Pride Plaza Hotel, Aerocity <br>New Delhi</div>
+                <button class="btn1">RESERVE</button> 
+        
+            <h4> <br><i class="fa-solid fa-star"></i>&nbsp; <i class="fa-solid fa-star"></i> &nbsp; <i class="fa-solid fa-star"></i> &nbsp;<i class="fa-solid fa-star"></i> &nbsp;<i class="fa-solid fa-star"></i>  </h4>
+            <p>Asset 5-A, Hospitality District, Aerocity, Indra Gandhi International Airport, New Delhi, New Delhi <br>and NCR, 110037, India <br> <a href="#" >Home</a>  >  <a href="#" >Hotels</a> > <a href="#" >India</a> > New Delhi and NCR > Pride Plaza Hotel, Aerocity New Delh</p>
+          
+        </div>
+        <div class="img_map">
+            <div class="img_map1">
+              
+            </div>
+            <div class="img_map2">
+         
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.364597872946!2d78.44461!3d17.442255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91eab079a02d%3A0x8dab2769c038c0fd!2sVector%20India%20institute!5e0!3m2!1sen!2sin!4v1680250027456!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
+            </div>
+
+        </div>
+    <div class="Book_Rooms">
+        <div class="Book_Rooms_con">
+            <div class="c1">
+            
+                <div class="c1_con"> Check-in</div> <p class="c1_p"> Tue, Mar 14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-calendar-days"></i></p>
+            </div>
+            <div class="c1">
+                <div class="c1_con"> Check-out</div> <p class="c1_p"> Wed, Mar 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-calendar-days"></i></p>
+            </div>
+            <div class="c3">
+                <div class="c3_con"> Rooms
+                    <select>
+                        <option value="1"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div> <p class="c3_p">1</p>
+            </div>
+            <div class="c3">
+                <div class="c3_con"> Adults
+                    <select>
+                        <option value="1"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div> <p class="c3_p">2</p>
+            </div>
+            <div class="c3">
+                <div class="c3_con"> Children
+                    <select>
+                        <option value="1"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div> <p class="c3_p">0</p>
+            </div>
+            <div class="c4">
+                <p class="c4_p">FIND ROOMS</p>
+            </div>
+        
+        </div>
+</div>
+    <div id="Rooms_Rates">
+        <div class="Rooms_Rates_head">Guest Reservations' " is an independent travel network offering over 100,000 hotels worldwide. <a href="#">Learn more</a></div>
+        <h2 class="h2">Rooms & Rates</h2>
+        <div class="image_cont">
+            <div class="left_img"> <img src="https://images.getaroom-cdn.com/image/upload/s--ZNp-GVfF--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938481/00e245cfadd6b9acf1c94623a04da6711cdbba9f?atc=e7cd1cfa" alt="images"> </div>
+            <div class="mid_cont">Premium Luxury Suite With 25% <br>  Discount On Food And Soft <br> Beverage,1+1 Happy Hours
+                <p class="mid_air_logo"><br> With your stay: <br><i class="fa-solid fa-plane-up"></i> &nbsp; Airport Shuttle</p>
+                <h4 class="mid_anchor"> <a href="#">Room amenities, details, and policies</a> </h4>
+            </div>
+            <button class="btn">CHECK RATES</button>
+           
+            
+        
+        </div>
+        <div class="image_cont">
+            <div class="left_img"> <img src="https://images.getaroom-cdn.com/image/upload/s--0cKm4XJW--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938483/8e59529f4e29796fda34bd9d8487a5ceea9118bf?atc=e7cd1cfa" alt="images"> </div>
+            <div class="mid_cont">Luxury Suite With One Way <br> Airport Transfer ,<br> 25% Discount On Food And Soft  &nbsp; 
+                <p class="mid_air_logo"><br> With your stay: <br><i class="fa-solid fa-plane-up"></i> &nbsp; Airport Shuttle</p>
+                <h4 class="mid_anchor"> <a href="#">Room amenities, details, and policies</a> </h4>
+            </div>
+            <button class="btn">CHECK RATES</button>
+           
+            
+        </div>
+        <div class="image_cont">
+            <div class="left_img"> <img src="https://images.getaroom-cdn.com/image/upload/s--KhDuhPXv--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938481/7b4f3cf9d849f6eb6a707497772785a7029d9c64?atc=e7cd1cfa" alt="images"> </div>
+            <div class="mid_cont">
+                4 
+                Pride Escape <br>25% Discount On Food And Soft  &nbsp; 
+                <p class="mid_air_logo"><br> With your stay: <br><i class="fa-solid fa-plane-up"></i> &nbsp; Airport Shuttle</p>
+                <h4 class="mid_anchor"> <a href="#">Room amenities, details, and policies</a> </h4>
+            </div>
+            <button class="btn">CHECK RATES</button>
+           
+            
+        </div>
+        <div class="image_cont">
+            <div class="left_img"> <img src="https://images.getaroom-cdn.com/image/upload/s--zRJEs8ij--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938476/11ea3beff0663c10da6d0fd1df3f6e974de33c4a?atc=e7cd1cfa" alt="images"> </div>
+            <div class="mid_cont">Premium King Room Suite 25%<br>   Discount On Food And Soft <br> Beverage,1+1 Happy Hours
+                <p class="mid_air_logo"><br> With your stay: <br><i class="fa-solid fa-plane-up"></i> &nbsp; Airport Shuttle</p>
+                <h4 class="mid_anchor"> <a href="#">Room amenities, details, and policies</a> </h4>
+            </div>
+            <button class="btn">CHECK RATES</button>
+           
+            
+        </div>
+        <div class="image_cont">
+            <div class="left_img"> <img src="https://images.getaroom-cdn.com/image/upload/s--ZNp-GVfF--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938481/00e245cfadd6b9acf1c94623a04da6711cdbba9f?atc=e7cd1cfa" alt="images"> </div>
+            <div class="mid_cont">Deluxe Twin Room &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; 
+                <p class="mid_air_logo"><br> With your stay: <br><i class="fa-solid fa-plane-up"></i> &nbsp; Airport Shuttle</p>
+                <h4 class="mid_anchor"> <a href="#">Room amenities, details, and policies</a> </h4>
+            </div>
+            <button class="btn">CHECK RATES</button>
+           
+            
+        </div>
+        <div class="image_cont">
+            <div class="left_img"> <img src="https://images.getaroom-cdn.com/image/upload/s--2cujOlTD--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938487/747f65b8669b60744745ca9b00196ebc9c623bbf?atc=e7cd1cfa" alt="images"> </div>
+            <div class="mid_cont">Premium Pampering &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; 
+                <p class="mid_air_logo"><br> With your stay: <br><i class="fa-solid fa-plane-up"></i> &nbsp; Airport Shuttle</p>
+                <h4 class="mid_anchor"> <a href="#">Room amenities, details, and policies</a> </h4>
+            </div>
+            <button class="btn">CHECK RATES</button>
+           
+            
+        </div>
+        <div class="image_cont">
+            <div class="left_img"> <img src="https://images.getaroom-cdn.com/image/upload/s--VpKuib60--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938487/1613797eb95ef71ef005ba6acd089093c1ad6b60?atc=e7cd1cfa" alt="images"> </div>
+            <div class="mid_cont">
+                4 
+                Deluxe King Room &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+                <p class="mid_air_logo"><br> With your stay: <br><i class="fa-solid fa-plane-up"></i> &nbsp; Airport Shuttle</p>
+                <h4 class="mid_anchor"> <a href="#">Room amenities, details, and policies</a> </h4>
+            </div>
+            <button class="btn">CHECK RATES</button>
+           
+            
+        </div>
+        <div class="image_cont">
+            <div class="left_img"> <img src="https://images.getaroom-cdn.com/image/upload/s--ZNp-GVfF--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938481/00e245cfadd6b9acf1c94623a04da6711cdbba9f?atc=e7cd1cfa" alt="images"> </div>
+            <div class="mid_cont">Superior King &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <p class="mid_air_logo"><br> With your stay: <br><i class="fa-solid fa-plane-up"></i> &nbsp; Airport Shuttle</p>
+                <h4 class="mid_anchor"> <a href="#">Room amenities, details, and policies</a> </h4>
+            </div>
+            <button class="btn">CHECK RATES</button>
+           
+            
+        </div>
+        <div class="image_cont">
+            <div class="left_img"> <img src="https://images.getaroom-cdn.com/image/upload/s--ZNp-GVfF--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938481/00e245cfadd6b9acf1c94623a04da6711cdbba9f?atc=e7cd1cfa" alt="images"> </div>
+            <div class="mid_cont">Superior Twin Room With 25%<br>Discount On Food And Soft<br>Beverage,1+1 Happy Hours &nbsp; &nbsp; &nbsp;
+                <p class="mid_air_logo"><br> With your stay: <br><i class="fa-solid fa-plane-up"></i> &nbsp; Airport Shuttle</p>
+                <h4 class="mid_anchor"> <a href="#">Room amenities, details, and policies</a> </h4>
+            </div>
+            <button class="btn">CHECK RATES</button>
+           
+            
+        </div>
+        <div class="image_cont">
+            <div class="left_img"> <img src="https://images.getaroom-cdn.com/image/upload/s--d55di9E4--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938474/f5c25f240d9696a88abe4abe3292a7e51574b392?atc=e7cd1cfa" alt="images"> </div>
+            <div class="mid_cont">Premium&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p class="mid_air_logo"><br> With your stay: <br><i class="fa-solid fa-plane-up"></i> &nbsp; Airport Shuttle</p>
+                <h4 class="mid_anchor"> <a href="#">Room amenities, details, and policies</a> </h4>
+            </div>
+            <button class="btn">CHECK RATES</button>
+           
+            
+        </div>
+        <div class="image_cont">
+            <div class="left_img"> <img src="https://images.getaroom-cdn.com/image/upload/s--3Q22sjQV--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938474/0e51a29cf8f5969feb1eee014536afb7f2523577?atc=e7cd1cfa" alt="images"> </div>
+            <div class="mid_cont">Day Use Room - From 10:00 To<br>  17:00&nbsp;&nbsp;&nbsp;
+                <p class="mid_air_logo"><br> With your stay: <br><i class="fa-solid fa-plane-up"></i> &nbsp; Airport Shuttle</p>
+                <h4 class="mid_anchor"> <a href="#">Room amenities, details, and policies</a> </h4>
+            </div>
+            <button class="btn">CHECK RATES</button>
+           
+            
+        </div>
+        <div class="image_cont">
+            <div class="left_img"> <img src="https://images.getaroom-cdn.com/image/upload/s--ZNp-GVfF--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1665938481/00e245cfadd6b9acf1c94623a04da6711cdbba9f?atc=e7cd1cfa" alt="images"> </div>
+            <div class="mid_cont">Premium Luxury Suite With 25% <br>  Discount On Food And Soft <br> Beverage,1+1 Happy Hours
+                <p class="mid_air_logo"><br> With your stay: <br><i class="fa-solid fa-plane-up"></i> &nbsp; Airport Shuttle</p>
+                <h4 class="mid_anchor"> <a href="#">Room amenities, details, and policies</a> </h4>
+            </div>
+            <button class="btn">CHECK RATES</button>
+           
+            
+        </div>
+           
+          <button class="find_btn">FIND AVAILABLE ROOMS</button>
+        </div>
+        
+    </div>
+    <div class="About_Pride_Hotel">
+        <div class="About_Pride_Hotel_heading">
+            About Pride Plaza Hotel, Aerocity New Delhi
+        </div>
+        <div class="About_Pride_Hotel_content">
+            Ideally located close to the Delhi international and domestic airport, the hotel has an easy access to the corporate and commercial hubs of Delhi, Gurgaon and the NCR regions. Pride Plaza Hotel Aerocity, New Delhi offers 2 restaurants and a bar, a fully equipped gym, full service spa and an outdoor swimming pool with free WiFi available throughout the property. The Delhi Aerocity Metro Station is just 750 mt away, Central Mall – a shopping center with over 500 brands and Worldmark consisting premium offices, shopping outlet and eateries is 200 mt from the property. The beautiful hotel houses 385 majestically designed opulent rooms which are well equipped with premium amenities and contemporary technology to serve the best for the comfort. Also an ideal place for conferences, conventions and marriage ceremonies, the hotel offers five elegantly designed banquet halls spread across 12,000 sq. ft. with attached pre-function areas. For a relaxing sojourn, the hotel offers a fitness center with a myriad of equipment, a luxurious spa as well as an azure blue swimming pool. The hosts of dining options available are a paradise for food lovers who wish to experience the refinement of bona fide Asian recipes or relish the aromatic flavors of cosmopolitan cuisine. The 24 hours dining restaurant – Café Pride, the Pan-Asian restaurant – Oriental Spice and Mr. Confectioner – the patisserie offers an array of confectionaries and bakery products. Designed with enticing décor, the lounge bar, Stallion lets one unwind after a long day with refreshing cocktails, mocktails and world-class beverages. What’s more, for a dose of tranquility and relaxation, one can head to Sohum Spa, the wellness center featuring a fully-equipped fitness center. In order to achieve complete guest satisfaction the Pride Plaza Hotel has also initiated a guest centric system where every team member is well trained to meet a guest’s expectation and contribute to creating a lasting impression. All external and internal calls are received at the Pride Services desk for centralized and smooth communication. From Connaught Place, the hotel is 11 mi away and 3.4 mi away from Vasant Kunj. Fortis Hospital is 4.3 mi. The New Delhi Railway Station is 12 mi and Hazrat Nizamuddin Railway Station is 14 mi.
+        </div>
+        
+    </div>
+    <div class="Amenities">Amenities&nbsp;&nbsp;:-
+
+        <div class="Amenities_div1">
+            <i id="a1" class="fa-solid fa-square-check"></i> &nbsp; Room Service <br>
+            <i id="a1" class="fa-solid fa-square-check"></i> &nbsp; Restaurant <br>
+            <i id="a1"  class="fa-solid fa-square-check"></i> &nbsp; Laundry
+
+        </div>
+        <div class="Amenities_div2">
+            <i id="a1" class="fa-solid fa-square-check"></i>  &nbsp; 24 hour front desk <br>
+            <i  id="a1" class="fa-solid fa-square-check"></i> &nbsp; Currency Exchange
+        </div>
+        <div class="Amenities_div3">
+            <i id="a1" class="fa-solid fa-square-check"></i > &nbsp;  Fitness Center <br>
+            <i id="a1" class="fa-solid fa-square-check"></i> &nbsp;  Airport Transportation
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <div id="Location">
+        <div class="location_map">Location</div>
+        <div class="data">Pride Plaza Hotel, Aerocity New Delhi <br>
+            Asset 5-A, Hospitality District, Aerocity, Indra Gandhi International Airport, New Delhi, New Delhi and NCR, 110037, <br> India</div>
+            <div class="big_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.364597872946!2d78.44461!3d17.442255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91eab079a02d%3A0x8dab2769c038c0fd!2sVector%20India%20institute!5e0!3m2!1sen!2sin!4v1680250027456!5m2!1sen!2sin" width="1025" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+    </div>
+    <div class="Near_Hotels">Polular Hotels Nearby  </div>
+        <div class="img_grid">
+           <div class="one" > The Metropolition Hotal & <br> Spa New Dehli  <div>
+            <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+           </div></div>
+           <div class="two" > eros Hotal New Delhi,<br>  Nehru Place
+            <div><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i></div>
+           </div>
+           <div class="tree" > The Grand New Delhi
+
+            <div><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i></div>
+           </div>
+           <div class="for" > Taj Grand New Delhi
+            <div><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i></div>
+           </div>
+           <div class="five" > Crowne Plaza New Delhi <br>Mayur Vihar Noida,An <br>IHG...
+
+
+            <div><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i></div>
+           </div>
+           <div class="six" >Raddon Blu marna <br> Hotal Cannaught Place
+            <div><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i></div>
+           </div>
+
+           
+        </div>
+  
+    <div class="Guest_Reservations">
+        <div class="Guest_Reservations_logo"> </div>
+           
+        <div class="guest_Reservations_data">
+            We are an independent travel network <br>
+            offering over 100,000 hotels worldwide </div>
+            <div class="leran_more"> Learn more  -></div>
+       
+       
+   </div>
+    <div class="Footer">
+        <div class="left_footer">
+      
+            <div class="footer_logo">
+                An independent travel network
+            </div>
+            <div class="fb_logo"><i class="fa-brands fa-facebook-f"></i> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-brands fa-twitter"></i> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-envelope"></i> </div>
+
+
+
+        </div>
+        <div class="mid_footer">
+            <div class="mid_footer_con"><h4>Learn More</h4>
+                <div>About Us <br>
+                    FAQs <br>
+                    News <br>
+                    Customer Reviews <br>
+                    Terms of Service <br>
+                    Privacy Policy
+                    
+                </div>
+              
+            </div> 
+        </div>
+              <div class="right_footer">
+             <div class="right_footer_con"> <h4>Get in Touch</h4></div>
+                <div>Contact Us <br>
+                    My Booking <br>
+                    Group Rates <br>
+                    Weddings <br>
+                    Extended Stay
+                </div>
+              </div>
+
+     
+          
+        </div>
+
+       
+    <div>
+        <div class="hr"> 
+            <div ><hr></div>
+            <div class="hr_left">  Copyright 2023 Guest ReservationsTM.
+
+            </div>
+            <div class="hr_right">Guest ReservationsTM is an independent travel network <br>
+                offering over 100,000 hotels worldwide.
+                
+            </div>
+    </div>
+  
+      
+</body> 
+</html>

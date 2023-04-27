@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_page</title>
+    <style>
+        *{
+            margin: 0px;
+            outline: 0px;
+            padding: 0px;
+        }
+        #back_page{
+            font-size: 20px;
+         
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://i.pinimg.com/originals/ae/a6/68/aea668a381c99256ff48cdd479791617.gif');
+            background-size: 100% 100%;
+        }
+        .box{
+            position: relative;
+            top :70px;
+            display: flex;
+            flex-direction: column;
+            margin:auto;
+            padding:40px;
+            width: 20%;
+            height: 54vh;
+            border: 3px solid rgb(0, 0, 0);
+          
+          
+        }
+        .login1{
+            font-size: 35px;
+            text-align: center;
+            color: rgb(240, 0, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         
+            
+        }
+        input[type=text]{
+            font-size: 20px;
+            padding-left: 80px;
+            margin-top: 30px;
+            padding: 5px 10px;
+            text-align: center;
+        }
+        input[type=password]{
+            font-size: 20px;
+            margin-top: 30px;
+            padding: 5px 10px;
+            text-align: center;
+        }
+       
+        
+        .btn{
+            font-size: 15px;    
+            margin-left: 60px;
+            margin-top: 30px;
+            padding: 5px 10px;
+            color: rgb(0, 192, 26);
+            font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+           
+    
+        }
+        .btn input{
+            font-size: 17px;
+          
+        }
+        ::placeholder{
+            color: rgb(235, 193, 7);
+            font-weight: bold;
+        }
+       
+        input[type=new]{
+            color: rgb(139, 146, 101);
+            background: transparent;
+            font-size: 20px;
+            padding-left: 80px;
+            margin-top: 30px;
+            padding: 5px 10px;
+            border: 1px solid rgb(255, 255, 255);
+            text-align: center;
+        }
+        .pass{
+            padding-top: 20px;
+            color: aliceblue;
+        }
+        .google{
+            padding-top: 10px;
+            color: rgb(13, 255, 5);
+            font-size: 19px;
+            padding-left: 15%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .google:hover{
+            color: green;
+        }
+     
+        
+    </style>
+</head>
+<body>
+    <div id="back_page">    
+        <div class="box">
+        <div class="login1" >Login </div>
+        <input type="text" placeholder="user id" >
+        <input type="password" placeholder="password" required>
+        <form >
+        <input  type="submit" value="SUBMIT"class="btn">
+        </form>
+      
+            <div class="google"> <a href="login.html">Create Account </a>
+             
+            <div class="pass"> <a href="forget.html">Forget Password ?</a> </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

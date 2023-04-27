@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+         *{
+            margin: 0px;
+            outline: 0px;
+            padding: 0px;
+        }
+        .nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18vh;
+    width: 100%;
+    background-color: rgb(253, 93, 0);
+   
+}
+.left img{
+
+    width: 200px;
+    height: 80px;
+    padding-left: 60px;     
+}
+
+.right{
+        display: flex;
+}
+
+.right .search-bar {
+    position: relative;
+}
+
+.right .search-bar input{
+    width: 120px;
+}
+
+.right .search-bar i{
+    position: absolute;
+    left: 90PX;
+    top: 10px;
+}
+
+.right div{
+    padding-right: 40px;
+    font-size: 20px;
+    color: blue;
+}
+
+.right div a:hover{
+    color: rgb(255, 255, 255);
+  
+}
+ .right div a:link{
+   
+    text-decoration: none;
+}
+input[type="search"]{
+        font-size: 20px;
+        padding: 5px;
+        height: 40px ;
+        width: 100px;
+        margin-right: 40px;
+        border-radius: 10px;
+        
+    }
+    ::placeholder{
+       color: blue;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+   
+
+    .img1{
+        height: 70vh;
+        width: 80%;
+        margin-left: 15vh;
+        margin-top: 5vh;
+        background: url("https://www.discovercentralma.org/default/assets/Image/dcu-center.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        animation: demo 25s infinite;
+       
+        
+    }
+   
+    
+    @keyframes demo {
+            10%{
+                background-size: 100% 100%;
+                background-image: url("key1.jpg");
+            }
+            20%{
+                background-size: 100% 100%;
+                background-image: url("key2.jpg");
+            }
+            30%{
+                background-size: 100% 100%;
+                background-image: url("key3.jpg");
+            }
+            40%{
+                background-size: 100% 100%;
+                background-image: url("key4.jpg");
+            }
+            50%{
+                background-size: 100% 100%;
+                background-image: url("key5.jpg");
+            }
+            60%{
+                background-size: 100% 100%;
+                background-image: url("key6.jpg");
+            }
+            70%{
+                background-size: 100% 100%;
+                background-image: url("key7.jpg");
+            }
+            80%{
+                background-size: 100% 100%;
+                background-image: url("key8.jpg");
+            }
+            90%{
+                background-size: 100% 100%;
+                background-image: url("key9.jpg");
+            }
+            100%{
+                background-size: 100% 100%;
+                background-image: url("key10.jpg");
+            }
+        }
+        .explore{
+            margin: auto;
+
+            height: 20vh;
+            width: 100%;
+            background-color: burlywood;
+         
+          
+        }
+        .explore1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(0, 68, 255);
+            padding-left: 30px;
+            padding-top: 40px; 
+            font-size: 30px;
+        }
+        .butn{
+            font-size: 15px;
+            margin-left: 80px;
+            padding: 20px 25px;
+            background-color: navy;
+            border: 0px;
+            color: white;
+            border-radius: 10px;
+        }
+        .butn:hover{
+            background-color: coral;
+            color: black;
+        }
+        .why_dcu{
+            height: 5vh;
+            width: 100%;
+            padding-left: 20px;
+            margin: auto;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: darkorange;
+        }
+        .dcu_img{
+            width: 60%;
+            height: 40vh;
+            margin: auto;
+            margin-top: 5px;
+            margin-left: 30x;
+            background-image: linear-gradient(rgba(2, 1, 1, 0.1),rgba(0, 0, 0,0.1)),url('school1.jpg');
+            background-size: 100% 100%;
+          
+        }
+        .our_school{
+            height: 60vh;
+            width: 100%;
+            background-color: yellow;
+        }
+        .school{
+            font-size: 35px;
+            color: blue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-left: 30px;
+            padding-top: 10px;
+            text-decoration: underline;
+        }
+        .hr{
+            border: 1px solid rgb(75, 74, 74);
+            width: 95%;
+            margin: auto;
+            margin-top: 30px;
+            color: aqua;
+        }
+        .school_img{
+            height: 25vh;
+            width: 100%;
+           margin-top: 70px;
+            margin-left: 50px;
+            
+        }
+        .school_img1{
+            color: aliceblue;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 25vh;
+            width: 25%;
+            position: absolute;
+            margin-left: 330px;
+            background-image: linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.7)),url('https://th.bing.com/th/id/OIP.oZHuDpv1q1jiAJ9cylQfLQHaE8?pid=ImgDet&rs=1'),url('https://www.independent.ie/incoming/88ede/36281212.ece/AUTOCROP/w1240h700/NO%20FEE%20DCU%20ACCESS%202.jpg'),url('https://www.discovercentralma.org/default/assets/Image/dcu-center-ballroom.jpg');
+            background-size: 100% 100%;
+            transition:transform 1s;
+       
+        }
+        .school_img1:hover{
+            color: rgb(255, 0, 0);
+            transform : scale(1.4,1.4);
+            
+        }
+        .school_img2:hover{
+            color: rgb(255, 0, 0);
+ 
+            transform : scale(1.4,1.4);
+        }
+        .school_img3:hover{
+            color: rgb(255, 0, 0);
+            transform : scale(1.4,1.4);
+        }
+        .school_img2{
+            text-align: center;
+            font-size: 20px;
+            padding-top: 20px;
+            color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+             position: absolute;
+            height: 25vh;
+            width: 25%;
+            margin-left: 650px;
+            background-image: linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.6)),url('https://www.independent.ie/incoming/88ede/36281212.ece/AUTOCROP/w1240h700/NO%20FEE%20DCU%20ACCESS%202.jpg'),url('https://www.discovercentralma.org/default/assets/Image/dcu-center-ballroom.jpg');
+            background-size: 100% 100%;
+            transition:transform 1s;
+      
+        }
+        .school_img3{
+            text-align: center;
+            font-size: 20px;
+            padding-top: 20px;
+            color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: absolute;
+            height: 25vh;
+            width: 25%;
+            background-image: linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.7)),url('https://www.discovercentralma.org/default/assets/Image/dcu-center-ballroom.jpg');
+            background-size: 100% 100%;
+            transition:transform 1s;
+      
+        }
+       
+    .our_student_img2{
+            height: 30vh;
+            width: 25%;
+            margin-left: 45px;
+            margin-top: 30px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('https://business.dcu.ie/wp-content/uploads/2023/03/IMG-1889-495x400.webp'),url('https://business.dcu.ie/a-slice-of-life-with-ntr-plc-ceo-rosheen-mcguckian/'),url('https://business.dcu.ie/wp-content/uploads/2023/02/Picture2CF-495x400.webp');
+            background-size: 100% 100%;
+    }
+        .highlight{
+            height: 230vh;
+            width: 100%;
+           background-color: rgb(0, 195, 255);
+       
+          
+        }
+        .highlight1{
+               font-size: 40px;
+               padding-left: 30px;
+               padding-top: 20px;
+               color: aliceblue;
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .highlight img{
+            height: 70vh;
+            width: 100%;
+           
+        }
+        .social_midea{
+            background-color: rgb(255, 255, 255);
+           
+            
+        }
+        .social{
+            position: relative;
+            font-size: 35px;
+            color: rgb(0, 0, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-left: 30px;
+            padding-top: 10px;
+            text-decoration: underline;
+        }
+        .line{
+            border: 1px solid rgb(75, 74, 74);
+            width: 100%;
+            margin-top: 30px;
+        }
+        .socail_logo{
+        margin-top: 3px;
+        margin-left: 30px;
+           
+        }
+        .socail_logo img{
+           border-radius: 50%; 
+            height: 100px; 
+            width: 100px;
+            border: black 2px solid;
+            padding: 3px;
+        } 
+        .bus{
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         font-size: 19px;
+         color: darkblue;
+        }
+        .p{
+            font-size: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: red;
+        }
+        .social_img4{
+            width: 20%;
+            height: 30vh;
+            display: flex;
+            flex-direction: row;
+           
+            margin-top: 20px;
+        
+         
+            
+
+        }
+        .social_img4 img{
+            padding-left: 40px; 
+               transition:transform 1s;
+           
+        }
+        .social_img4 img:hover{
+
+       transform : scale(1.2,1.2);
+
+
+        }
+        .socail_logo_buttom{
+            font-size: 40px;
+           text-align: center;
+           padding-top: 10px;
+           padding: 15px;
+          
+          
+        }
+        #f1{ 
+            padding: 3px;
+            border-radius: 50px;
+            border: 1px solid rgb(0, 140, 255);
+            color: dodgerblue;
+        }
+
+        #t1{
+            padding: 3px;
+            border-radius: 50px;
+            border: 1px solid rgb(0, 140, 255);
+            color: dodgerblue;
+        }
+        #y1{
+            padding: 3px;
+            border-radius: 50px;
+            border: 1px solid rgb(255, 0, 0);
+            color: rgb(255, 0, 0);
+        }
+        #i1{
+            padding: 3px;
+            border-radius: 50px;
+            border: 1px solid rgb(225, 0, 255);
+            color: rgb(243, 0, 190);
+        }
+        #w1{
+            padding: 3px;
+            border-radius: 50px;
+            border: 1px solid rgb(0, 255, 0);
+            color: rgb(2, 255, 2);
+        }
+        #footer{
+                display: flex;
+                position: relative;
+                width: 100%;
+                height: 90vh;
+                background-color:bisque;
+                padding-top: 20px;
+            }
+            .socal{
+                display: flex;
+               flex-direction: column;
+                width: 25%;
+                height: 100vh;
+            
+               
+            }
+            .cont1{
+                background-color:bisque;
+                padding-left: 20px;
+               
+                font-size:25px ;
+                color: rgb(0, 0, 0);
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            }
+          
+            #facebook{
+                color: rgb(0, 98, 245);
+                font-size: 50px;
+                padding-left: 5px;
+                padding-top: 10px;
+            }
+            #tiwtter{
+                color: rgb(0, 154, 243);
+                font-size: 50px;
+                padding-left: 3px;
+                padding-top: 10px;
+            }
+     
+            #youtube{
+                color: rgb(250, 52, 52);
+                font-size: 50px;
+                padding-left: 3px;
+                padding-top: 10px;
+            }
+     
+            #insta{
+                color: rgb(247, 1, 173);
+                font-size: 50px;
+                padding-left: 3px;
+                padding-top: 10px;
+            }
+            #what{
+                color: rgb(1, 247, 13);
+                font-size: 50px;
+                padding-left: 7px;
+                padding-top: 10px;
+            }
+     
+     
+     
+            .socal1{
+                display: flex;
+               flex-direction: column;
+                width: 25%;
+                height: 100vh;
+                
+            }
+            .news{
+                padding-left: 20px;
+                font-size:25px ;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+          
+            .dcu{
+                font-size: 17px;
+                padding-left: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+            }
+            .dcu1{
+                font-size: 17px;
+                padding-left: 20px;;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+            }
+            .dcu2{
+                font-size: 17px;
+                padding-left: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+            }
+            .dcu3{
+                font-size: 17px;
+                padding-left: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+            }
+           
+            .socal2{
+                display: flex;
+               flex-direction: column;
+                width: 25%;
+                height: 100vh;
+           
+            }
+            .sitemap{
+            
+                padding-left: 20px;
+           
+                font-size:25px ;
+             
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .home{
+                font-size: 15px;
+                padding-left: 20px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif; 
+                padding-top: 20px;
+                line-height: 35px;
+            }
+            
+     
+            .socal3{
+                display: flex;
+               flex-direction: column;
+                width: 25%;
+                height: 100vh;
+   
+                
+               
+            }
+            .find{
+             
+                padding-left: 20px;
+             
+                font-size:25px ;
+             
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .find1{
+                font-size: 15px;
+                padding-left: 20px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif; 
+                padding-top: 20px;
+                line-height: 35px;
+                
+            }
+            .pre{
+                position: relative;
+                background-color: rgb(0, 118, 221);
+                padding: 10px 40px;
+                margin-top: 10px;
+                text-align: center;
+                margin-left: 40%;
+                font-size: 20px;
+                color: azure;
+                font-style: italic;
+                border-radius: 30px;
+                border: 2px solid red  ;
+            }
+            .pre:hover{
+                background-color: chocolate;
+                color: black;
+                font-size:24px ;
+            }
+        
+
+
+
+
+        
+    </style>
+
+</head>
+<body>
+    
+<nav class="nav">
+    <div class="left"><img src="DCU-Navy-Logo.png.webp" >     </div>  
+    <div class="right">
+    <div class="search-bar">
+        <input type="search" placeholder="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div> 
+    <div ><i class="fa-sharp fa-solid fa-house"></i> <a href="home.html">Home</a> </div>
+    <div> <i class="fa-solid fa-address-card"></i> <a href="About_US.html">About us</a> </div>
+    <div><i class="fa-solid fa-phone"></i> <a href="contact.html">Contact Us </a> </div>
+    <div> <i class="fa-solid fa-user"></i> <a href="login_page.html"> Login</a> </div>
+</div>
+</nav>
+    <div  class="img1"></div>
+  
+        <div class="explore">
+        <div class="explore1">Explore Our Programmes
+
+        <button class="butn">undergraduate</button>
+        <button class="butn">Postgraduate</button> 
+    </div>
+    </div>
+    <div class="why_dcu">Why DCU Business School</div>
+   <div class="dcu_img"></div>
+   <div class="our_school">
+    <div class="school">Our School</div>
+    <div class="hr"></div>  
+<div class="school_img">
+    <div class="school_img1"> DCU Business School<br> VR Lab</div> 
+    <div class="school_img2"> Scholarship</div>
+    <div class="school_img3">Events</div>
+</div>
+   </div>
+    <div class="highlight">
+        <div class="highlight1">Highlight</div> 
+    <img src="HIGH1.jpg" alt="not found"/>
+    <img src="HIGH2.jpg" alt="">
+    <img src="high.jpg" alt="">
+</div>
+    <div class="social_midea">  
+     <div class="social"> social Midea
+    <div class="line"></div>
+        </div>
+        <div class="socail_logo">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/d2/1e/d2/d21ed287-ada4-3a9e-afdf-3079a6c3b6c4/source/512x512bb.jpg" alt="">
+         <div class="bus"> Business.Dcu </div>
+         <p class="p">Where Innovation Leads Learning 🚀 Financial Times ranked top 90 European Business Schools, part of <br> @dublincityuniversity - AACSB and AMBA accredited.DCU Business School</p> 
+        </div>
+         <div class="social_img4">
+          
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5DvkX6E6pURc0NuaRfMcSSy2SVp9DsaOaig&usqp=CAU" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ieG9rNCtlMMArBJjGVsJbND_WljoprzeOQ&usqp=CAU" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlrL64Xd1jJXyu-Vdy2z58Vl7BzXFT9UWNHA&usqp=CAU" alt="">
+         </div>
+         <div class="socail_logo_buttom"> <i class="fa-brands fa-facebook" id="f1"></i>&nbsp; <i class="fa-brands fa-twitter" id="t1"></i>  &nbsp;<i class="fa-brands fa-youtube" id="y1"></i>  &nbsp;<i class="fa-brands fa-instagram" id="i1"></i> &nbsp;<i class="fa-brands fa-whatsapp" id="w1"></i></div>
+       
+    </div>
+    <div id="footer">
+        <div class="socal">
+            <div class="cont1">SOCIAL CHANNELS</div>
+            <div>
+                <i class="fa-brands fa-facebook" id="facebook"></i>
+                <i class="fa-brands fa-square-twitter" id="tiwtter"></i>
+                <i class="fa-brands fa-youtube" id="youtube"></i>
+                <i class="fa-brands fa-square-instagram" id="insta"></i>
+                <i class="fa-brands fa-square-whatsapp" id="what"></i>
+            </div>
+
+        </div>
+        <div class="socal1">
+            
+            <div class="news">LATEST NEWS</div>
+           
+            <div class="dcu">
+                DCU Marketing, <br> Innovation, and <br>Technology students <br> provide creative <br> consulting advice to <br> The Cool Food <br> School <br>02/03/2023 - 9:50 am
+            </div>
+            <div class="dcu1">Bernard Brogan My <br> MSc Management <br> (Business) <br> Experience <br>
+                24/02/2023 - 6:38 pm</div>
+                <div class="dcu2">
+                    DCU Executive MBA  Louise Walsh, 1st year shares her thoughts!
+                    14/02/2023 - 4:31 pm
+                </div>
+                <div class="dcu3">
+                    A slice of LIFE with NTR plc CEO Rosheen McGuckian
+                    14/02/2023 - 4:06 pm
+                </div>
+        </div>
+        <div class="socal2">
+            <div class="sitemap">SITEMAP</div>
+            <div class="home">HOME <br>
+                BUSINESS INSIGHTS <br>
+                COLLABORATE WITH US <br>
+                ABOUT US > <br>
+                OUR PROGRAMMES > <br>
+                SCHOLARSHIPS <br>
+                FACULTY AND RESEARCH > <br>
+                EXECUTIVE EDUCATION > <br>
+                UPCOMING EVENTS <br>
+                ALUMNI <br>
+                DEANS HONOURS LIST <br>
+                NEWS <br>
+                CONTACT US</div>
+        </div>
+        <div class="socal3">
+            <div class="find">NEED TO FIND OUT <br> MORE?</div>
+            <div  class="find1">
+                DCU MAIN WEBSITE <br> DCU STUDENT APPS <br> DCU STAFF APPS <br> DISCLAIMER <br> PRIVACY POLICY</div>
+        </div>
+    </div>
+        <button class="pre"> <a href="fornt.html">pre page</a> </button>
+    
+
+       
+   
+</body>
+
+</html>
